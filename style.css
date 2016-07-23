@@ -2,7 +2,7 @@ body{
 background-color:dimgray;
 }
 list1{
-  right:0;
+  float:right;
   
   
 }

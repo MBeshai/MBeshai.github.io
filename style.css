@@ -1,27 +1,30 @@
-body{
-background-color:dimgray;
-    background-image:url('https://img.clipartfox.com/dd644fda32a315a5efdedfeb6cbb4604_free-download-black-and-white-ocean-photos_1920-1280.jpeg');
+
+div{
+    text-align:center;
+    border:dashed;
+    border-color:aqua;
+}
+p{
+    text-align:center;
+    bottom:50%;
+}
+table{
+    border:double;
+    border-color:red;
+    width:100%;
+      background-image:url('https://img.clipartfox.com/dd644fda32a315a5efdedfeb6cbb4604_free-download-black-and-white-ocean-photos_1920-1280.jpeg');
+
+    top:0;
+    left:0;
+}
+tr{
+    border:double;
+    border-color:blue;
+  
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: 0;
-    opacity: .9;
-}
-
-
-li {
-    float: right;
-
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+td{
+    border:double;
+    border-color:green;
+   
 }

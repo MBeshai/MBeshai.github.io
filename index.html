@@ -1,29 +1,59 @@
+
 <!DOCTYPE html>
 
 <html ng-app>
 <head>
- <title>Beshai's blog</title>
-<link rel="stylesheet" href="style.css">
+    <title>Beshai's blog</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body ng-app="myApp">
- <ul>
-  <li style="float:left"><a href="index.html">Mina Beshai</a></li>
-  <li><a href="contact.html">About</a></li>
-  <li><a href="resume.html">Resume</a></li>
-  <li><a href="about.html">Contact</a></li>
-</ul>
+    <div id="firstDiv">
+        <table>
+            <tr>
+                <td id="topdiv">
+                    <ul>
+                        <li><a href="index.html">Mina Beshai</a></li>
+                        <li><a href="contact.html">About</a></li>
+                        <li><a href="resume.html">Resume</a></li>
+                        <li><a href="about.html">Contact</a></li>
+                    </ul>
+                </td>
+            </tr>
 
- <p>test1<p>
- 
+            <tr>
+                <td id="bottomDiv">
+                    <p>
+                        Welcome.
+                        I'm Mina Beshai. I develop Software.
+                    </p>
+                </td>
 
-<script src="js/main.js"></script>
+            </tr>
+
+        </table>
+    </div>
+    <div id="secDiv" style="background-color: whitesmoke"> 
+        <p>Projects</p>
+        
+
+    </div>
+
+  
+    <script src="js/main.js"></script>
     <!-- Modules -->
     <script src="js/app.js"></script>
 
     <!-- Controllers -->
     <script src="js/controllers/MainController.js"></script>
+    <script>
+        var totalHeight = window.innerHeight - 25;
+        var topDiv = document.getElementById("topdiv").clientHeight;
+        var newHeight = totalHeight - topDiv;
+        document.getElementById("bottomDiv").style.height = newHeight + "px";
+        
 
+    </script>
 </body>
 </html>
 

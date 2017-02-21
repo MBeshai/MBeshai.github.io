@@ -5,7 +5,7 @@ body {
 }
 
 div {
-    width: 100%;
+   
 }
 
 ul {
@@ -61,3 +61,9 @@ td {
     border: double;
     border-color: green;
 }
+
+img{
+    height:200px;
+    width:200px;
+}
+

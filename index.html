@@ -1,13 +1,12 @@
 
+
 <!DOCTYPE html>
 
 <html ng-app>
 <head>
     <title>Beshai's blog</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="MB.png" />
-
-
+    <link rel="shortcut icon" type="image/x-icon" href="mb.png" />
 </head>
 <body ng-app="myApp">
     <div id="firstDiv">
@@ -37,21 +36,25 @@
 
         </table>
     </div>
-    <div id="secDiv" style="background-color: whitesmoke;; border:double; border-color:aliceblue"> 
-        <h1>Projects</h1>
+    <div id="secDiv" style="background-color: whitesmoke; border:double; border-color:aliceblue"> 
+        <h1>
+
+        Projects
+
+        </h1>
      </div>
     <div ng-controller="rps">
         <h2>Rock, Paper, Scissors</h2>
-        <div style="text-align:center; display: inline-block">
+        <div style="text-align:center">
 
             <div style="display:inline-block">
-                <div>
-                    <img id="playerPic" src="https://static01.nyt.com/images/2011/08/21/magazine/21mag-abstractimages-slide-XOE4/21mag-abstractimages-slide-XOE4-jumbo.jpg" />
+                <div id="imgdiv">
+                    <img id="playerPic" src="r.jpg" />
                 </div>
                 <div>
-                    <button onclick="changePic('r')" class="btn-primary btn-lg">Rock</button>
-                    <button onclick="changeP()" class="btn-primary btn-lg">Paper</button>
-                    <button onclick="changePic('s')" class="btn-primary btn-lg">Scissors</button>
+                    <button class="button" onclick="changePic('r')">Rock</button>
+                    <button class="button" onclick="changePic('p')" >Paper</button>
+                    <button class="button" onclick="changePic('s')">Scissors</button>
                 </div>
             </div>
                 
@@ -84,15 +87,24 @@
     <!-- Controllers -->
     <script src="js/controllers/MainController.js"></script>
     <script>
-        var totalHeight = window.innerHeight - 25;
+        var totalHeight = window.innerHeight;
         var topDiv = document.getElementById("topdiv").clientHeight;
         var newHeight = totalHeight - topDiv;
         document.getElementById("bottomDiv").style.height = newHeight + "px";
 
-        function changeP() {
+        function changePic(x) {
+            
+            if (x === 'p') {
+                document.getElementById("playerPic").src = "p.jpg";
 
-            documents.getElementById("playerPic").src = "p.jpg";
-            alert(2);
+            }
+            else if (x === 'r') {
+                document.getElementById("playerPic").src = "r.jpg";
+
+            }
+            else if (x === 's') {
+                document.getElementById("playerPic").src = "s.jpg";
+            }
         }
       
     </script>

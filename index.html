@@ -13,10 +13,12 @@
             <tr>
                 <td id="topdiv">
                     <ul>
-                        <li><a href="index.html">Mina Beshai</a></li>
-                        <li><a href="contact.html">About</a></li>
-                        <li><a href="resume.html">Resume</a></li>
-                        <li><a href="about.html">Contact</a></li>
+                        <li style="float:left"><a href="index.html">M</a></li>
+
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="about.html">Blog</a></li>
+                        <li style="float:right"><a href="index.html">B</a></li>
+
                     </ul>
                 </td>
             </tr>
@@ -34,9 +36,42 @@
         </table>
     </div>
     <div id="secDiv" style="background-color: whitesmoke"> 
-        <p>Projects</p>
-        
+        <h1>Projects</h1>
+     </div>
+    <div ng-controller="rps">
+        <h2>Rock, Paper, Scissors</h2>
+        <div style="text-align:center">
 
+            <div style="display:inline-block">
+                <div>
+                    <img id="playerPic" src="https://static01.nyt.com/images/2011/08/21/magazine/21mag-abstractimages-slide-XOE4/21mag-abstractimages-slide-XOE4-jumbo.jpg" />
+                </div>
+                <div>
+                    <button onclick="changePic('r')" class="btn-primary btn-lg">Rock</button>
+                    <button onclick="changeP()" class="btn-primary btn-lg">Paper</button>
+                    <button onclick="changePic('s')" class="btn-primary btn-lg">Scissors</button>
+                </div>
+            </div>
+                
+            <div style="display: inline-block">
+                <h3>Score</h3>
+                Your Score: <p id="playerScore">0</p>
+               <br />
+                 Computer Score:
+                <p id="computerScore">0</p> 
+            </div>
+
+            <div style="display:inline-block">
+                <div>
+                    <img id="computerPic" src="r.jpg" />
+                </div>
+                <div>
+                    <br />
+                </div>
+            </div>
+
+        </div>
+      
     </div>
 
   
@@ -51,8 +86,13 @@
         var topDiv = document.getElementById("topdiv").clientHeight;
         var newHeight = totalHeight - topDiv;
         document.getElementById("bottomDiv").style.height = newHeight + "px";
-        
 
+        function changeP() {
+
+            documents.getElementById("playerPic").src = "p.jpg";
+            alert(2);
+        }
+      
     </script>
 </body>
 </html>

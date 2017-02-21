@@ -34,8 +34,7 @@ li {
 
 div {
     text-align: center;
-    border: dashed;
-    border-color: aqua;
+   
 }
 
 p {
@@ -44,8 +43,7 @@ p {
 }
 
 table {
-    border: double;
-    border-color: red;
+   
     width: 100%;
     background-image: url('https://img.clipartfox.com/dd644fda32a315a5efdedfeb6cbb4604_free-download-black-and-white-ocean-photos_1920-1280.jpeg');
     top: 0;
@@ -53,13 +51,11 @@ table {
 }
 
 tr {
-    border: double;
-    border-color: blue;
+  
 }
 
 td {
-    border: double;
-    border-color: green;
+   
 }
 
 img{

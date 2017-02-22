@@ -1,6 +1,4 @@
 /**
 * Main AngularJS Web Application
 */
-var app = angular.module('myApp', []);
-
-
+var app = angular.module("rps", []);

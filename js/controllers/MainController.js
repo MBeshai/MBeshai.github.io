@@ -1,3 +1,5 @@
-app.controller('MainController',['$scope',function($scope){
-  $scope.body="hello world";
-                                 }]);
+var rps= = function($scope) {
+  $scope.computer=0;
+  $scope.player=0;
+  
+}

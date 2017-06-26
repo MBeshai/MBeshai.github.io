@@ -7,6 +7,16 @@
     <title>Beshai's blog</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" type="image/x-icon" href="mb.png" />
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+        <script src="js/main.js"></script>
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+    <script src="js/miserables.json"></script>
+    <script scr="treeJS.js"></script>
+    <!-- Controllers -->
+    <script src="js/controllers/MainController.js"></script>
+
+
 </head>
 <body ng-app="myApp">
     <div id="firstDiv">
@@ -76,16 +86,12 @@
             </div>
 
         </div>
+        <svg width="960" height="600"></svg>
+
       
     </div>
 
   
-    <script src="js/main.js"></script>
-    <!-- Modules -->
-    <script src="js/app.js"></script>
-
-    <!-- Controllers -->
-    <script src="js/controllers/MainController.js"></script>
     <script>
         var totalHeight = window.innerHeight;
         var topDiv = document.getElementById("topdiv").clientHeight;

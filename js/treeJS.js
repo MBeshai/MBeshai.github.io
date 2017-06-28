@@ -1,4 +1,6 @@
-var svg = d3.select("svg"),
+var tree = {
+  draw: function(){
+      var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
 
@@ -70,3 +72,4 @@ function dragended(d) {
   d.fx = null;
   d.fy = null;
 }
+  }};

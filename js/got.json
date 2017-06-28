@@ -12,12 +12,12 @@
 {"id":"Cersie Lannister", "group":2}
 ],
 "links":[
-{"source": "Ned Stark", "target":"Rob Stark", "value":1},
-{"source": "Ned Stark", "target":"Jon Snow", "value":1},
-{"source": "Ned Stark", "target":"Arya Stark", "value":1},
-{"source": "Ned Stark", "target":"Sansa Stark", "value":1},
-{"source": "Ned Stark", "target":"Brandon Stark", "value":1}
-{"source": "Ned Stark", "target":"Rickon", "value":1}
+{"source": "Rob Stark", "target":"Ned Stark", "value":1},
+{"source": "Jon Snow", "target":"Ned Stark", "value":1},
+{"source": "Arya Stark", "target":"Ned Stark", "value":1},
+{"source": "Sansa Stark", "target":"Ned Stark", "value":1},
+{"source": "Brandon Stark", "target":"Ned Stark", "value":1}
+{"source": "Rickon Stark", "target":"Ned Stark", "value":1}
 
 ]
 

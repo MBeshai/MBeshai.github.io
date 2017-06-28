@@ -23,7 +23,9 @@
 
 <script>
       		var fileInput = document.getElementById('fileInput');
-
+		
       //tree.draw("js/miserables.json");
-        tree.draw(fileInput);
+       	fileInput.addEventListener('change', function(e) {
+		tree.draw(fileInput.files[0]);
+	}
 </script>

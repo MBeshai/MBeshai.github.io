@@ -1,0 +1,24 @@
+{
+"nodes":[
+{"id":"Ned Stark", "group":1},
+{"id":"Rob Stark","group":1},
+{"id":"Jon Snow","group":1},
+{"id":"Arya Stark","group":1},
+{"id":"Sansa Stark", "group":1},
+{"id":"Brandon Stark","group":1},
+{"id":"Rickon Stark","group":1},
+{"id":"Robert Baratheon","group":0},
+{"id":"Tywin Lannister", "group":2},
+{"id":"Cersie Lannister", "group":2}
+],
+"links":[
+{"source": "Ned Stark", "target":"Rob Stark", "value":1},
+{"source": "Ned Stark", "target":"Jon Snow", "value":1},
+{"source": "Ned Stark", "target":"Arya Stark", "value":1},
+{"source": "Ned Stark", "target":"Sansa Stark", "value":1},
+{"source": "Ned Stark", "target":"Brandon Stark", "value":1}
+{"source": "Ned Stark", "target":"Rickon", "value":1}
+
+]
+
+}

@@ -1,5 +1,5 @@
 var tree = {
-  draw: function(filename){
+  draw: function(){
       var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height");
@@ -11,7 +11,7 @@ var simulation = d3.forceSimulation()
     .force("charge", d3.forceManyBody())
     .force("center", d3.forceCenter(width / 2, height / 2));
 
-d3.json(filename, function(error, graph) {
+d3.json("miserables.json", function(error, graph) {
   if (error) throw error;
 
   var link = svg.append("g")

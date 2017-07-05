@@ -14,6 +14,7 @@
 }
 
 </style>
+			<p>This box accepts your filepath that you intend to visualize: for example: /js/miserables.json </p>
 			<input type="text" id="fileInput">
 
 <svg width="960" height="600"></svg>
@@ -24,8 +25,7 @@
 <script>
      var fileInput = document.getElementById('fileInput');
 		
-     tree.draw("/js/miserables.json");
        fileInput.addEventListener('change', function(e) {
-		alert( document.getElementById('fileInput').value)				
+		 tree.draw( document.getElementById('fileInput').value)				
  	})
 </script>

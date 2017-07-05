@@ -22,10 +22,10 @@
 <script src="js/miserables.json"></script>
 
 <script>
-     var fileInput = document.getElementById('fileInput').value;
+     var fileInput = document.getElementById('fileInput');
 		
      tree.draw("/js/miserables.json");
        fileInput.addEventListener('change', function(e) {
-		alert(fileInput)				
+		alert( document.getElementById('fileInput').value)				
  	})
 </script>

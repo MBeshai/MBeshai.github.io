@@ -20,9 +20,9 @@ div{
 <div>			<p>This box accepts your filepath that you intend to visualize: for example: /js/miserables.json </p>
 			<input type="text" id="fileInput">
 			<button onclick="myFunction()">Clear graph</button>
-			<button onclick="myFunction()">Demonstration Over</button>
+			<button onclick="myFunction3()">Demonstration Over</button>
 
-Try it Yourself »
+
 
 </div>
 <svg width="960" height="600"></svg>
@@ -36,4 +36,21 @@ Try it Yourself »
        fileInput.addEventListener('change', function(e) {
 		 tree.draw( document.getElementById('fileInput').value)				
  	})
+	function myFunction(){
+		d3.select("svg").remove();
+	}
+	function myFunction2(){
+	 if(flashStep==1) {
+ 		document.bgColor="FFFF00";
+ 		flashStep=2; 
+ 	}
+ 	else {
+ 		document.bgColor="FF0000";
+ 		flashStep=1;
+		 }
+	}
+	var flashStep = 1;
+	function myFunction3(){
+	var task = window.setInterval(myFunction2,1000);
+	}
 </script>

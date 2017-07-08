@@ -74,4 +74,11 @@ img{
   stroke: #fff;
   stroke-width: 1.5px;
 }
+p{
+    width:50%
+   position:center;
+    text-align: left;
+    
+    
+}
 

@@ -1,0 +1,106 @@
+body {
+    background-color: dimgray;
+    margin: 0;
+    padding: 0;
+}
+
+#viewIntro, #viewWork{
+  width:100%;
+  height:300px;
+  background-color: blue;
+  border-style:double;
+  border-color:black;
+}
+#workExp, #introDiv{
+  border-style:double;
+  border-color:black;
+  display: inline-block;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: 0;
+    opacity: .9;
+    width: 100%;
+    text-align: center;
+}
+
+
+li {
+    display: inline-block;
+}
+
+li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+div {
+    text-align: center;
+    margin:0;
+}
+
+p {
+    text-align: center;
+
+}
+
+table {
+
+    width: 100%;
+    background-image: url('../images/background.png');
+    background-repeat:no-repeat;
+    background-size:100%;
+    top: 0;
+    left: 0;
+}
+
+tr {
+
+}
+
+td {
+    width:50%;
+   text-align:center;
+}
+
+img{
+    height:200px;
+    width:200px;
+
+}
+
+.links line {
+  stroke: #999;
+  stroke-opacity: 0.6;
+}
+
+.nodes circle {
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+#introP{
+    width:100%;
+    left:25%;
+    text-align: center;
+}
+#intro{
+    text-align:center;
+    width:50%;
+    left:25%;
+    margin:0 auto;
+}
+
+
+#rpsDiv{
+}
+#cards{
+    display:inline-block;
+}

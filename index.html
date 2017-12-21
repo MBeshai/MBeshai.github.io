@@ -1,127 +1,149 @@
 
-
 <!DOCTYPE html>
+<html lang="en">
 
-<html ng-app>
-<head>
-    <title>Beshai's blog</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="mb.png" />
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="js/GoogleTracking.js"></script>
-    <script src="js/rps.js"></script>
+  <head>
 
-</head>
-<body ng-app="myApp">
-    <div id="firstDiv">
-        <table>
-            <tr>
-                <td id="topdiv">
-                    <ul>
-                        <li style="float:left"><a href="index.html">M</a></li>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Personal website">
+    <meta name="author" content="Mina Beshai">
 
-                        <li><a href="index.html">About</a></li>
-                        <li><a href="about.html">Blog</a></li>
-                        <li style="float:right"><a href="index.html">B</a></li>
+    <title>Beshai's website</title>
+    <link rel="icon" type="image/png" href="./img/MB.png" />
 
-                    </ul>
-                </td>
-            </tr>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-            <tr>
-                <td id="bottomDiv">
-                    <div id="introP">
-                        <p id="intro">
-                            Welcome.
-                            I'm Mina Beshai. I develop Software.
-                            My education was in computer science and math.
-                            I currently work as a java developer.
-                            The purpose of this site is to leave my online footprint as well as demonstrate some of my skills.
-                            On this page, some school projects will be hosted and hopefully they get more impressive as you scroll
-                            down. I intend to develop this site more as time goes on.
-                        </p>
-                    </div>
-                </td>
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
 
-            </tr>
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
 
-        </table>
-    </div>
-    <div id="secDiv" style="background-color: whitesmoke; border:double; border-color:aliceblue"> 
-        <h1>
+  </head>
 
-        Projects
+  <body id="page-top">
 
-        </h1>
-     </div>
-
-    <div id="rpsDiv">
-        <h2>Rock, Paper, Scissors</h2>
-        <h3>This game is the classic game except you play against the computer. The computer is a markov chain, it takes into account the past moves when deciding what to play. It guesses patterns. I set it to guess 4 moves or less. Try it by playing a simple pattern. </h3>
-        <div id="cards" style="text-align:center;">
-
-            <div style="float:left;">
-                <div id="imgdiv">
-                    <img id="playerPic" src="r.jpg" />
-                </div>
-                <div>
-                    <button class="button" onclick="changePic('r')">Rock</button>
-                    <button class="button" onclick="changePic('p')" >Paper</button>
-                    <button class="button" onclick="changePic('s')">Scissors</button>
-                </div>
-            </div>
-                
-            <div style=" float:left; ">
-                <h3>Score</h3>
-                <div>Your Score:<randomsdsdada id="playerScore">0</randomsdsdada></div>
-                <div>Computer Score:<daferfwef id="computerScore">0</daferfwef> </div>
-                <div>Draws:<daferfwef id="draws">0</daferfwef> </div>
-
-            </div>
-
-            <div style="float:left; ">
-                <div id="imgdiv">
-                    <img id="computerPic" src="r.jpg" />
-                </div>
-                <div>
-                    <br />
-                </div>
-            </div>
-
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Mina Beshai</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
         </div>
-       
-        
-        <h6>This little game was developed using JavaScript and HTML. </h6>
+      </div>
+    </nav>
 
-    </div>
-    <div style=" border:double; border-color:aliceblue">
-        <a href="dataViz.html">Data Visualization project</a>
-    </div>
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              <h1 class="brand-heading">Developer</h1>
+              <p class="intro-text">A software Engineer on his path to senior engineer.</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-  
-    <script>
-        var totalHeight = window.innerHeight;
-        var topDiv = document.getElementById("topdiv").clientHeight;
-        var newHeight = totalHeight - topDiv;
-        document.getElementById("bottomDiv").style.height = newHeight + "px";
+    <!-- About Section -->
+    <section id="about" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>About Me</h2>
+            <p>I'm a software engineer in my first year out of college. My studies where in Math and Computer Science.</p>
+            <p>Seeking work as a backend developer round the DC metropolitan area.</p>
+            <p>I have full time experience as developer working as Java Developer. I can also perform front-end work.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        function changePic(x) {
-            
-            if (x === 'p') {
-                document.getElementById("playerPic").src = "p.jpg";
-                playGame('p');
-            }
-            else if (x === 'r') {
-                document.getElementById("playerPic").src = "r.jpg";
-                playGame('r')
-            }
-            else if (x === 's') {
-                document.getElementById("playerPic").src = "s.jpg";
-                playGame('s')
-            }
-        }
-      
-    </script>
-</body>
+    <!-- Download Section -->
+    <section id="download" class="download-section content-section text-center">
+      <div class="container">
+        <div class="col-lg-8 mx-auto">
+          <h2>Projects and academic code</h2>
+          <p>You can find some personal projects and academic code on my github.</p>
+          <a href="https://github.com/mbeshai" class="btn btn-default btn-lg">Visit my Github</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="content-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2>Contact Me</h2>
+            <p>Feel free to contact me for my resume or a job posting that matches my level and geographical location.</p>
+            <ul class="list-inline banner-social-buttons">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/minabeshai/" class="btn btn-default btn-lg">
+                  <i class="fa fa-linkedin-square"></i>
+                  <span class="network-name">LinkedIn</span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/mbeshai" class="btn btn-default btn-lg">
+                  <i class="fa fa-github fa-fw"></i>
+                  <span class="network-name">Github</span>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map"></div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <!-- <p>Copyright &copy; Your Website 2017</p> -->
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFfhmCy9lIxzodDp4K1DcIqoJZ54Ov5kk&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+  </body>
+
 </html>
 

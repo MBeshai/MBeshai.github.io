@@ -18,6 +18,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+    <script src="js/blog.js"></script>
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
@@ -54,7 +55,7 @@
 </nav>
 
 <!--header-->
-<header class="masthead">
+<header id="masthead" class="masthead">
     <div class="intro-body">
         <div class="container">
             <div class="row">
@@ -67,6 +68,41 @@
         </div>
     </div>
 </header>
+
+<section class="pt-3 pb-3">
+    <div class="container">
+        <article class="row card  border-0 flex-md-row  card-top">
+<!--            <a class="col-md-4  order-md-2 order-1 w-md-25" href="#">-->
+<!--                <img class="img-fluid" src="https://via.placeholder.com/1100x1000/5fa9f8/ffffff" srcset="https://via.placeholder.com/1110x1000/5fa9f8/ffffff 2x" alt="Pic 8">-->
+<!--            </a>-->
+            <div class="card-body">
+                <div class=" text-uppercase font-weight-bold mb-4 text-warning">First Post</div>
+                <h2 class="card-title display-4 font-weight-bold" onclick="loadPost()">
+                    <a href="#" class="text-dark" title="Blog title">Reviewing Tiger King, breaker of boredom</a>
+                </h2>
+                <div class="card-text mb-4 text-dark">
+                    <p class="lead"> When you need entertainment in corona quarantine.</p>
+                </div>
+                <div id="blogbody" class="d-none text-dark">
+                    <p>While most people are contemplating their freedom and yearning for the days of acting on instinct, Netflix decides to introduce a character that almost embodies american freedom.</p>
+                    <p>The thought of being on a 200+ acre estate with wild animals, trucks, guns, and explosives would normally not interest me in the least bit. Now under the circumstances, it is basically something that I need. I want to roam the wild. If this wasn't enough, enter joe exotic, the protagonist of the series. The man runs around doing whatever he wants: own tigers and lions, polygamy, run for office, have an arch nemesis. Basically the series was the perfect mental stimulus to a quarantined person.</p>
+                    <p>The series is beyond phenomenal. It is a twisted drama that somehow feels scripted but all the events that take place are real world verifiable. Carole is out there with a zoe of her own, and her husband is still missing. The King is in prison and Jeff took over the zoe. There are still more tigers in the US than in the wild. All of this information is fascinating when considering the fact that alot of people haven't been outside in months.
+                    <p>I am here left wondering if this show is actually good, or it's a psychological trick based on the idea that our quarantine confinement is making displays of wild freedom attractive. </p>
+                    <p>Whatever, this was a wonderful binge. Highly recommended.</p>
+                    <p>When the series ended, it made me feel empty like something precious was taken from me. To get my mind off of that roller coaster I started this blog.</p>
+                </div>
+                <div class="mt-auto  d-inline-block w-100 pt-2">
+                    <div class="d-block text-dark">
+                        <div class="font-weight-bold">Mina Beshai</div>
+                        <div class="text-grey">4/18/2020</div>
+                    </div>
+                    <button id="articleback" type="button" class="d-none btn btn-dark float-right" onclick="bloglist()">Back</button>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+
 <!--<section class="content-section text-center">-->
 <!--    <div class="container">-->
 <!--        <div class="row">-->
@@ -101,7 +137,6 @@
 
 <!-- Custom scripts for this template -->
 <script src="js/grayscale.min.js"></script>
-<script src="js/blog.js"></script>
 </body>
 
 </html>

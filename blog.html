@@ -71,18 +71,58 @@
 <section class="pt-3 pb-3">
     <div class="container">
         <article class="row card  border-0 flex-md-row  card-top">
-<!--            <a class="col-md-4  order-md-2 order-1 w-md-25" href="#">-->
-<!--                <img class="img-fluid" src="https://via.placeholder.com/1100x1000/5fa9f8/ffffff" srcset="https://via.placeholder.com/1110x1000/5fa9f8/ffffff 2x" alt="Pic 8">-->
-<!--            </a>-->
             <div class="card-body">
-                <div class=" text-uppercase font-weight-bold mb-4 text-warning">First Post</div>
-                <h2 class="card-title display-4 font-weight-bold" onclick="loadPost()">
+                <h2 class="card-title display-4 font-weight-bold" onclick="loadPost(this)">
+                    <a href="#" class="text-dark" title="Blog title">Computer Science is not Software Engineering</a>
+                </h2>
+                <div class="card-text mb-4 text-dark">
+                    <p class="lead">Only 4 classes in a computer science major are applicable to the work environment.</p>
+                </div>
+                <div class="blogbody d-none text-dark">
+                    <p>Recently, I read an article about how Computer Science is not software engineering and the author completely agreed and then decided that it was a good thing.
+                        In my own experience, computer science is a worthy pursuit but it is not what most people are aiming for. The clear majority of students that chose to major in CS go down the road to become software developers.
+                        People expect college to prepare them for a career in their field of study, relative to that expectation a computer science major is a waste of time. The major doesn't prepare you more than a minor and a minor won't prepare you more than the first 3 classes.
+                        The only 3 classes in the required classes that I found applicable were CS 1, CS 2, and Data Structures.
+                        </p>
+
+                        <p>CS 1 taught me the absolute basics, create a small program, compile it, and run it. I learned main(), for loops, while loops, conditionals, IO, and some functional programming.
+                        CS 2 built upon that and I was introduced to OOP. Organizing your data and logic in objects and having logic be wrapped in functions. Then data structures came along and taught me how to store data and how to use different data structures for different purposes. It also taught me how
+                        to avoid exponential growth and how to go about solving some scalability. The things I learned in those three classes I use everyday. The vast majority of things I learned in every other required computer science class I forgot because I don't use it as a developer. I completely forgot most CPU architecture.
+                            I forgot assembly. I forgot ALL theory of automata material. I forgot most of DB management systems. I forgot a lot of the search algorithms and I forgot the reasons why their cases are what they are.</p>
+                        <p>
+                            In the end, I graduated with knowledge that I could've ran through in a few months. I had an edge on some people by taking an extra class that did teach me some useful things:
+                            Scripting languages. The teacher that taught that class realized that maybe students should have exposure to useful skills. In that semester I learned how to use python, JS, and bash
+                            as a scripting language. Then the teacher decided to teach us make files and force us to write scripts that built and start a project. Then build a deployable website. I took this class 2nd to last semester. The project and code from that class got me my first job. So essentially only 4 classes mattered.</p>
+                        <p>
+                            Whenever this conversation comes up people always say that I could learn development skills because I understood the fundamentals of how computers worked and that maybe is true. I don't know how much of a difference that could've caused. I wish that schools could teach a bit more skill and less theory. As highlighted above, a lot of classes were time wasted.
+                            I wish I learned RESTful services and how different application servers communicate with each other. Dependency management and cloud orchestration are also two very big topics that spending sometime on would've been nice.
+                        </p>
+                        <p>
+                            In the end university education is only the first step and people should take learning in to their own hands. All great developers know that. Computer Science is not software engineering and leaning on the degree is a bad approach to building a career.
+                        </p>
+                </div>
+                <div class="mt-auto  d-inline-block w-100 pt-2">
+                    <div class="d-block text-dark">
+                        <div class="font-weight-bold">Mina Beshai</div>
+                        <div class="text-grey">10/01/2020</div>
+                    </div>
+                    <button type="button" class="articleback d-none btn btn-dark float-right" onclick="bloglist(this)">Back</button>
+                </div>
+            </div>
+        </article>
+    </div>
+</section>
+<section class="pt-3 pb-3">
+    <div class="container">
+        <article class="row card  border-0 flex-md-row  card-top">
+            <div class="card-body">
+                <h2 class="card-title display-4 font-weight-bold" onclick="loadPost(this)">
                     <a href="#" class="text-dark" title="Blog title">Reviewing Tiger King, breaker of boredom</a>
                 </h2>
                 <div class="card-text mb-4 text-dark">
                     <p class="lead"> When you need entertainment in corona quarantine.</p>
                 </div>
-                <div id="blogbody" class="d-none text-dark">
+                <div class="blogbody d-none text-dark">
                     <p>While most people are contemplating their freedom and yearning for the days of acting on instinct, Netflix decides to introduce a character that almost embodies american freedom.</p>
                     <p>The thought of being on a 200+ acre estate with wild animals, trucks, guns, and explosives would normally not interest me in the least bit. Now under the circumstances, it is basically something that I need. I want to roam the wild. If this wasn't enough, enter joe exotic, the protagonist of the series. The man runs around doing whatever he wants: own tigers and lions, polygamy, run for office, have an arch nemesis. Basically the series was the perfect mental stimulus to a quarantined person.</p>
                     <p>The series is beyond phenomenal. It is a twisted drama that somehow feels scripted but all the events that take place are real world verifiable. Carole is out there with a zoe of her own, and her husband is still missing. The King is in prison and Jeff took over the zoe. There are still more tigers in the US than in the wild. All of this information is fascinating when considering the fact that alot of people haven't been outside in months.
@@ -95,13 +135,12 @@
                         <div class="font-weight-bold">Mina Beshai</div>
                         <div class="text-grey">4/18/2020</div>
                     </div>
-                    <button id="articleback" type="button" class="d-none btn btn-dark float-right" onclick="bloglist()">Back</button>
+                    <button  type="button" class="articleback d-none btn btn-dark float-right" onclick="bloglist(this)">Back</button>
                 </div>
             </div>
         </article>
     </div>
 </section>
-
 <!--<section class="content-section text-center">-->
 <!--    <div class="container">-->
 <!--        <div class="row">-->
